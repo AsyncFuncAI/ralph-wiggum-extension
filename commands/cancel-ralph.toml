@@ -1,0 +1,15 @@
+description = "Cancel an active Ralph Wiggum loop."
+prompt = """
+Cancel the active Ralph loop by running:
+```bash
+bash "${extensionPath}/scripts/cancel-ralph-loop.sh"
+```
+
+This will set `active: false` in the state file at `.gemini/ralph-loop.local.md`.
+
+After cancellation, report the final status to the user including:
+- Total iterations completed
+- What was accomplished
+- Any remaining work
+"""
+

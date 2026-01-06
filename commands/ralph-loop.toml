@@ -1,0 +1,34 @@
+description = "Start a Ralph Wiggum iterative development loop for self-referential task completion."
+prompt = """
+You are initiating a Ralph Wiggum loop - an iterative, self-referential development methodology for Gemini CLI.
+
+**IMPORTANT:** First, run the setup script to create the loop state file:
+```bash
+bash "${extensionPath}/scripts/setup-ralph-loop.sh" $ARGUMENTS
+```
+
+The script accepts these arguments:
+- The task prompt (required) - what you want to accomplish
+- `--max-iterations <n>` - Stop after N iterations (default: unlimited)
+- `--completion-promise '<text>'` - Phrase that signals completion (USE QUOTES for multi-word)
+
+**Examples:**
+```bash
+bash "${extensionPath}/scripts/setup-ralph-loop.sh" Build a REST API --max-iterations 20
+bash "${extensionPath}/scripts/setup-ralph-loop.sh" --completion-promise 'DONE' Fix the auth bug
+```
+
+**After running the script:**
+1. Read the state file at `.gemini/ralph-loop.local.md` to understand your task
+2. Work on the task iteratively
+3. Each iteration, check your progress and continue improving
+4. If a completion promise is set, output `<promise>YOUR_PHRASE</promise>` when genuinely complete
+
+**CRITICAL RULES:**
+- Do NOT output a false completion promise to exit the loop
+- Trust the iterative process - keep improving until the task is genuinely complete
+- Check `.gemini/ralph-loop.local.md` for current iteration count and settings
+
+**To cancel the loop:** Use `/cancel-ralph` command
+"""
+
