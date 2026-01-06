@@ -13,7 +13,7 @@ Ralph is a development methodology based on continuous AI agent loops. The techn
 Install the Ralph extension by running *(requires Gemini CLI v0.4.0 or newer)*:
 
 ```bash
-gemini extensions install https://github.com/gemini-cli-extensions/ralph --auto-update
+gemini extensions install https://github.com/AsyncFuncAI/ralph-wiggum-extension --auto-update
 ```
 
 The `--auto-update` is optional: if specified, it will update to new versions as they are released.
