@@ -1,5 +1,7 @@
 # Ralph Wiggum Extension for Gemini CLI
 
+![Ralph Wiggum Gemini CLI](ralph-gemini-cli.png)
+
 Ralph Wiggum extension for Gemini CLI implements iterative, self-referential development loops. Named after Ralph Wiggum from The Simpsons, it embodies persistent iteration despite setbacks.
 
 ## What is Ralph?
